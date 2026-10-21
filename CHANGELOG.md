@@ -13,5 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - One card per point, automatic deduplication, no fabrication; when the source yields fewer than 5 distinct points, produce only as many as exist and say so (never pad).
 - Language follows the source text (Chinese article → Chinese cards, English article → English cards).
 - `agents/openai.yaml` interface manifest for OpenAI Agents / Codex.
-- `README.md`, `LICENSE` (MIT), and `tests/` samples (technical long-form / short note / repetitive text).
+- `README.md`, `LICENSE` (MIT), and `examples/` samples (technical long-form / short note / repetitive text).
 - CI workflow (`.github/workflows/validate.yml`) that runs the vendored `tools/quick_validate.py` on push, pull request, and tag.

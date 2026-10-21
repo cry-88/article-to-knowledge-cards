@@ -1,5 +1,7 @@
 # make-knowledge-cards
 
+![CI](https://github.com/cry-88/article-to-knowledge-cards/actions/workflows/validate.yml/badge.svg)
+
 把文章或本地 Markdown / TXT 文件整理成 5～8 张知识卡片的开源 Skill。
 
 ## 项目解决什么问题
@@ -111,6 +113,11 @@ tools/
 └── quick_validate.py # 官方校验脚本（已内置，CI 调用）
 .github/workflows/
 └── validate.yml      # CI：push / PR / 打 tag 时自动校验 Skill
+examples/
+├── input_technical.md / output_technical.md   # 技术长文 → 8 张独立卡片
+├── input_short.txt    / output_short.md       # 极短笔记 → 1 张（标注未凑数）
+├── input_repetitive.txt / output_repetitive.md # 重复文本 → 去重
+└── output_cognitive_load.md                   # 英文长文 → 8 张英文卡片
 ```
 
 
