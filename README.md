@@ -102,6 +102,23 @@ Skill 会先读取文件，再生成卡片。
 > 说明：原文仅包含 1 个明确知识点，故生成 1 张卡片，未强行凑数。
 ```
 
+### 来自 `examples/` 的样例
+
+仓库 `examples/` 目录提供更完整的输入/输出对照（每个示例是「输入文件 + 对应输出文件」）：
+
+| 输入 | 输出 | 演示要点 |
+|---|---|---|
+| `examples/input_technical.md` | `examples/output_technical.md` | 技术长文 → 8 张彼此独立的卡片 |
+| `examples/input_short.txt` | `examples/output_short.md` | 极短笔记 → 仅 1 张并标注"未强行凑数" |
+| `examples/input_repetitive.txt` | `examples/output_repetitive.md` | 换说法重复 → 自动去重 |
+| （对话中直接粘贴） | `examples/output_cognitive_load.md` | 英文长文 → 8 张英文卡片（语言跟随原文） |
+
+可直接打开这些文件查看完整结果，或用 Skill 复现，例如：
+
+> 把 `examples/input_technical.md` 做成知识卡片
+
+更详细的样例说明见 [`examples/README.md`](examples/README.md)。
+
 ## 项目结构
 
 ```
