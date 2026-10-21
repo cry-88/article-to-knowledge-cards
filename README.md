@@ -107,14 +107,19 @@ skills/make-knowledge-cards/
 ├── SKILL.md          # Skill 指令（核心，含输入处理/卡片格式/质量规则/不支持项）
 └── agents/
     └── openai.yaml   # OpenAI Agents / Codex 界面元数据（display_name + short_description）
+tools/
+└── quick_validate.py # 官方校验脚本（已内置，CI 调用）
+.github/workflows/
+└── validate.yml      # CI：push / PR / 打 tag 时自动校验 Skill
 ```
+
 
 ## 校验
 
-使用 skill-creator 提供的官方校验脚本 `quick_validate.py`（需自行准备 skill-creator 工具）：
+仓库内置一份与官方 `skill-creator` 一致的校验脚本 `tools/quick_validate.py`（仅用 Python 标准库，无需安装依赖），可直接运行：
 
 ```bash
-python quick_validate.py skills/make-knowledge-cards
+python tools/quick_validate.py skills/make-knowledge-cards
 ```
 
-输出 `Skill is valid!` 即通过。本仓库已通过该脚本校验。
+输出 `Skill is valid!` 即通过。本仓库已通过该脚本校验，并由 CI（`.github/workflows/validate.yml`）在每次 push / PR / 打 tag 时自动校验。
