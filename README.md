@@ -111,10 +111,10 @@ skills/make-knowledge-cards/
 
 ## 校验
 
-使用官方校验脚本（路径以你本地的 skill-creator 为准）：
+使用 skill-creator 提供的官方校验脚本 `quick_validate.py`（需自行准备 skill-creator 工具）：
 
 ```bash
-python skills/.system/skill-creator/scripts/quick_validate.py skills/make-knowledge-cards
+python quick_validate.py skills/make-knowledge-cards
 ```
 
-输出 `Skill is valid!` 即通过。
+输出 `Skill is valid!` 即通过。本仓库已通过该脚本校验。
