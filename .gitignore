@@ -1,0 +1,5 @@
+# Internal tooling / local workspace data — not part of the published skill
+.workbuddy/
+
+# Test samples (optional: uncomment to exclude from the published repo)
+# tests/

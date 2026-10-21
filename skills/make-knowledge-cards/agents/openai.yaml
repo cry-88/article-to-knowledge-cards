@@ -1,0 +1,5 @@
+interface:
+  display_name: "Make Knowledge Cards"
+  short_description: "Turn an article or Markdown/TXT file into 5-8 study cards."
+  brand_color: "#3B82F6"
+  default_prompt: "Convert the provided article or local Markdown/TXT file into 5-8 knowledge cards. For each card give a title, one-sentence core knowledge, a brief explanation, and either an example or a self-test question. Extract only the important, distinct ideas; deduplicate; never invent facts not in the source; and do not pad to reach a count when the source is thin."
